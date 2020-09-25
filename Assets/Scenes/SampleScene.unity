@@ -325,6 +325,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pikapikaPerticle: {fileID: 6276740352332375718, guid: 5aa8edfa383a4e04a870058fb947781f,
     type: 3}
+  huwahuwaPerticle: {fileID: 5046332855572525758, guid: 0c50d49d118f5ed43988d236e2841988,
+    type: 3}
+  kakukakuPerticle: {fileID: 4969091663557718430, guid: b9b298ea05a8ed1438020134de85b1b1,
+    type: 3}
 --- !u!4 &1359884291
 Transform:
   m_ObjectHideFlags: 0
