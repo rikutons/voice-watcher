@@ -12,7 +12,7 @@ public class DynamicEffectMaker : MonoBehaviour
     GameObject kakukakuPerticle;
     public void OnChangeText(string text){
         if(text.Contains("ピカピカ")){
-            Instantiate(pikapikaPerticle);
+            Instantiate(pikapikaPerticle)
         }
         if(text.Contains("ふわふわ")){
             Instantiate(huwahuwaPerticle);

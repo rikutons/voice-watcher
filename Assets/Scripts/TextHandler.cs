@@ -5,6 +5,8 @@ using UnityEngine;
 public class TextHandler : MonoBehaviour
 {
 
+    string CheckText = "null";
+
     [SerializeField]
     private string text;
     [SerializeField]
@@ -13,12 +15,22 @@ public class TextHandler : MonoBehaviour
     TextManager textManager;
     private void Start()
     {
-        OnChangeText(text);
+        //OnChangeText(text);
     }
 
     public void OnChangeText(string text)
     {
         dynamicEffectMaker.OnChangeText(text);
         textManager.OnChangeText(text);
+    }
+
+    //textが変更されたときOnChangeTextを呼ぶ
+    void Update()
+    {
+        if( CheckText != text )
+        {
+            OnChangeText(text);
+        }
+        CheckText = text;
     }
 }

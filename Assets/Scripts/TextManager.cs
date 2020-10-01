@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 using UnityEngine.UI;  // 追加しましょう
@@ -9,6 +10,7 @@ public class TextManager : MonoBehaviour
 
 
     public GameObject campas = null; // キャンパスを読み込む;
+    public GameObject SpeechBubble; //吹き出しを読み込む;
     GameObject TextHandler;
     TextHandler script;
     int count;
@@ -23,22 +25,22 @@ public class TextManager : MonoBehaviour
         script = TextHandler.GetComponent<TextHandler> ();
     }
 
+    //吹き出しを消す関数
+    void DestroySpeechBubble()
+    {
+        SpeechBubble.SetActive(false);
+    }
+
     // 更新
     public void OnChangeText(string text)
     {
-        //TextHandlerクラスのSentenceを取得
-        //string Sentence = script.Text;
+        //吹き出しを出現
+        SpeechBubble.SetActive(true);
         // オブジェクトからTextコンポーネントを取得(書き入れるキャンパスを取得)
         Text score_text = campas.GetComponent<Text>();
-        //文字数を取得
-        //int count = Sentence.Length;
-        //文字列の最初の10文字を取得
-        //string partA = Sentence.Substring(1, 10);
-        //文字列の次の10文字を取得
-        //string partB = Sentence.Substring(11, 20);
-        //Debug.Log(count);
         // テキストの表示を入れ替える
-        //string Sentence_new = partA;//+ "\n" + partB;
         score_text.text = text;
+        //2秒後に吹き出しを消す関数を呼び出す
+        Invoke("DestroySpeechBubble", 2.0f);
     }
 }

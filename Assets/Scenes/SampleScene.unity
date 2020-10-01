@@ -429,7 +429,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 2.75, y: 6.66}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1189077428
@@ -453,7 +453,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 22
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -509,8 +509,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 112.637726, y: 90.71759}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -144.16, y: 77.9}
+  m_SizeDelta: {x: 217.9, y: 96.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1254282118
 MonoBehaviour:
@@ -622,6 +622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   campas: {fileID: 1189077426}
+  SpeechBubble: {fileID: 1254282116}
 --- !u!4 &1352753160
 Transform:
   m_ObjectHideFlags: 0
@@ -780,8 +781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 599f9f1a5d3022c4da0588640e89f80e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: "\u3053\u3093\u306B\u3061\u306F\uFF08\u5C0F\uFF09\u3001\u3053\u3093\u306B\u3061\u306F\uFF08\u4E2D\uFF09\u3001\u3053\u3093\u306B\u3061\u306F\uFF08\u5927\uFF09\u3002\u3053\u3093\u306B\u3061\u306F\uFF08\u4F4E\u97F3\uFF09\u3001\u3053\u3093\u306B\u3061\u306F\uFF08\u4E2D\u97F3\uFF09\u3001\u3053\u3093\u306B\u3061\u306F\uFF08\u9AD8\u97F3\uFF09\u3002
-    \u306F\u3041\uFF08\u843D\u80C6\uFF09\u3001\u306F\u3041\uFF08\u76F8\u69CC\uFF09\u3001\u306F\u3041\uFF1F\uFF08\u7591\u554F\uFF09\u3001\u306F\u3041\uFF01\uFF1F\uFF08\u6012\u308A\uFF09\u3002\u30D4\u30AB\u30D4\u30AB\u3001\u3075\u308F\u3075\u308F\u3001\u304B\u304F\u304B\u304F\u3002\u62CD\u624B\u3002"
+  text: "\u3042\u3042\u3042\u3042\u3042"
   dynamicEffectMaker: {fileID: 1359884290}
   textManager: {fileID: 1352753159}
 --- !u!4 &2117382746
