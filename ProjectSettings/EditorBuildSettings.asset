@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/OpenCV+Unity/Demo/Lobby/Face_Detector/FaceDetectorScene.unity
     guid: dc53129b9536b4047802944847361339
+  - enabled: 1
+    path: Assets/Scenes/Activate.unity
+    guid: 975765d76d4d0474d8398e2086186637
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

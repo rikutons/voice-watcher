@@ -75,7 +75,9 @@
 			var BL = processor.Faces[0].Region.BottomLeft;
 			var Ce = processor.Faces[0].Region.Center;
 			//var de = Center.GetType();
+
 			//Ce.Y = processor.Height - Ce.Y;
+
 			Debug.Log(Ce);
      		
         		//↑
