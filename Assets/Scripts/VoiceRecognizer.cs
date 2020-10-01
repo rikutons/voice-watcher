@@ -22,8 +22,8 @@ namespace FrostweepGames.Plugins.GoogleCloud.SpeechRecognition
             speechRecognition.BeginTalkigEvent += BeginTalkigEventHandler;
             speechRecognition.EndTalkigEvent += EndTalkigEventHandler;
 
-            Debug.Log(speechRecognition.GetMicrophoneDevices()[1]);
-            speechRecognition.SetMicrophoneDevice(speechRecognition.GetMicrophoneDevices()[1]);
+            Debug.Log(speechRecognition.GetMicrophoneDevices()[MicroPhoneSetter.nowValue]);
+            speechRecognition.SetMicrophoneDevice(speechRecognition.GetMicrophoneDevices()[MicroPhoneSetter.nowValue]);
             speechRecognition.StartRecord(true);
         }
 

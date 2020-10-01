@@ -20,7 +20,7 @@ public class BackScript : MonoBehaviour
 
     public void fai()
     {
-        SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
+        SceneManager.LoadScene("FaceDetectorScene", LoadSceneMode.Single);
     }
 
 }
