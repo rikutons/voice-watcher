@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HukidashiEffectToggle : MonoBehaviour
+public class TopicEffectToggle : MonoBehaviour
 {
     public static bool enable = true;
     [SerializeField]
@@ -12,9 +12,10 @@ public class HukidashiEffectToggle : MonoBehaviour
     {
         enable = !enable;
 
-        if(enable)
+        if (enable)
             me.color = Color.white;
-        else if(!enable)
+        else if (!enable)
             me.color = Color.gray;
     }
+
 }

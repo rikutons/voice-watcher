@@ -6,6 +6,8 @@ namespace FrostweepGames.Plugins.GoogleCloud.SpeechRecognition
 {
     public class VoiceRecognizer : MonoBehaviour
     {
+        public int Silent = 0;
+
         [SerializeField]
         private GCSpeechRecognition speechRecognition;
         [SerializeField]
@@ -92,11 +94,13 @@ namespace FrostweepGames.Plugins.GoogleCloud.SpeechRecognition
         private void BeginTalkigEventHandler()
         {
             Debug.Log("Begin Talking");
+            Silent = 1;
         }
 
         private void EndTalkigEventHandler(AudioClip clip, float[] raw)
         {
             Debug.Log("End Talking");
+            Silent = 0;
 
             FinishedRecordEventHandler(clip, raw);
         }

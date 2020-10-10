@@ -5,12 +5,16 @@
     using System.Collections.Generic;
     using UnityEngine.UI;
     using OpenCvSharp;
+    using System.Diagnostics;
 
     public class FaceDetectorScene : WebCamera
     {
         public TextAsset faces;
         public TextAsset eyes;
         public TextAsset shapes;
+        public int text_x;
+        public int text_y;
+
 
         private FaceProcessorLive<WebCamTexture> processor;
 
@@ -62,7 +66,7 @@
             processor.ProcessTexture(input, TextureParameters);
 
             // mark detected objects線や枠の追加
-            // processor.MarkDetected();
+            //processor.MarkDetected();
 
             // processor.Image now holds data we'd like to visualize画面に映像を表示
             output = Unity.MatToTexture(processor.Image, output);   // if output is valid texture it's buffer will be re-used, otherwise it will be re-created
@@ -76,17 +80,22 @@
                 var BR = processor.Faces[0].Region.BottomRight;
                 var BL = processor.Faces[0].Region.BottomLeft;
                 var Ce = processor.Faces[0].Region.Center;
+                text_x = TR.X;
+                text_y = TR.Y;
+                //UnityEngine.Debug.Log(text_x);
+                //UnityEngine.Debug.Log(text_y);
             }
 
             //var de = Center.GetType();
 
             //Ce.Y = processor.Height - Ce.Y;
 
-            // Debug.Log(Ce);
+            //Debug.Log(Ce);
 
             //↑
 
             return true;
         }
+
     }
 }
